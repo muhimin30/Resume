@@ -523,12 +523,20 @@ section {
 }
 
 .achivements .achivements-wrap {
-  transition: 0.3s;
+  width: 100%;
+  aspect-ratio: 4 / 3; /* Set fixed height */
   position: relative;
   overflow: hidden;
   z-index: 1;
-	max-height: 98%;
 }
+
+.achivements .achivements-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes the image fill and crop nicely */
+}
+
+
 
 .achivements .achivements-wrap::before {
   content: "";
